@@ -1,6 +1,7 @@
 name: iso_build_mine
 on:
  workflow_dispatch:
+ #Removed the automated build schedule
  # schedule:
   #  - cron:  '30 2 * * *'
 
@@ -38,13 +39,16 @@ jobs:
         with:
           format: 'YY.MM'   
       -
-        name: image-build-uploadd
+        name: image-build-upload
         uses: manjaro/manjaro-iso-action@main
         with:
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
-          iso-profiles-repo: "https://github.com/cfdlad/iso-profiles"
+          
+          #Added this code below to let the build point to my iso-profiles repo and not the official manjaro one
+          iso-profiles-repo: "https://github.com/cfdlad/iso-profiles"  
+          
           version: ${{ steps.time.outputs.time }}-development
           kernel: linux61
           code-name: "Baba_live"
