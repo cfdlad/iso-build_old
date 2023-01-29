@@ -1,7 +1,9 @@
 ##My Manjaro iso-build
 
 #Motivations
+
 This is for a Manjaro iso that is ready to go where an internet connection is not reliable.
+
 It comes packed with additional applications pre-installed.
 
 #Additions to original Manjaro
