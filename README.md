@@ -1,16 +1,16 @@
-##My Manjaro iso-build
+## My Manjaro iso-build
 
-#Motivations
+# Motivations
 
 This is for a Manjaro iso that is ready to go where an internet connection is not reliable.
 
 It comes packed with additional applications pre-installed.
 
-#Additions to original Manjaro
+# Additions to original Manjaro
 The base build is kept as is with only additional software added.
 All the additional softwre are listed below.
 
-#My Additional Applications
+# My Additional Applications
 kooha               #screen recorder
 yt-dlp              #video downloader (cli)
 youtube-dl          #video downloader (cli)
