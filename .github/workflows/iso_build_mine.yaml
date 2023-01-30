@@ -25,7 +25,7 @@ jobs:
     needs: [prepare-release]
     strategy:
       matrix:
-        EDITION: [gnome]
+        EDITION: [gnome] #options include gnome, kde and xfce
         BRANCH: [stable]
         SCOPE: [full]
     steps:
@@ -46,7 +46,7 @@ jobs:
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
           
-          #Added this code below to let the build point to my iso-profiles repo and not the official manjaro one
+          #Added this code below to let the build process point to my iso-profiles repo and not the official manjaro one
           iso-profiles-repo: "https://github.com/cfdlad/iso-profiles"  
           
           version: ${{ steps.time.outputs.time }}-development
