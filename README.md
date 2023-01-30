@@ -1,7 +1,7 @@
 # My Manjaro iso-build
 
 This is a custom Manjaro iso that is pre-packaged with additional software.
-It is set to build **Manjaro gnome**, but can be changed to kde or xfce by changing the `Edition:[]` option in the `iso_build_mine.yaml` file.
+It is set to build **Manjaro gnome**, but can be changed to kde or xfce by changing the `Edition:[]` option in the [iso_build_mine.yaml](https://github.com/cfdlad/iso-build/blob/main/.github/workflows/iso_build_mine.yaml) file.
 
 ## Motivations
  
@@ -11,10 +11,9 @@ It comes packed with additional applications pre-installed and is meant to be fu
 
 The base build of Manjaro (gnome) is kept as is with only additional software added from the manjaro repository.  
 
-Software can be added or deleted by editing the `Packages-Desktop` file in [iso-profiles/manjaro/gnome/Packages-Desktop](https://github.com/cfdlad/iso-profiles/blob/master/manjaro/gnome/Packages-Desktop).   
+Software can be added or deleted by editing the `Packages-Desktop` file in [iso-profiles/manjaro/gnome/Packages-Desktop](https://github.com/cfdlad/iso-profiles/blob/master/manjaro/gnome/Packages-Desktop).  
 
-All the additional softwre are listed below.  
-[Duck Duck Go](https://duckduckgo.com)
+All the additional softwre are listed below.
 
 ## My Additional Applications
 
@@ -66,5 +65,8 @@ nethogs               #network monitor (cli)
 
 ## Build
 
-To build use `iso_build_mine.yaml` file in the iso-build repo to run the github action.  
-This workflow only makes use of my iso-build repo and my iso-profile repo.  
+To build use `iso_build_mine.yaml` file in the iso-build repo to run the github action. 
+
+This workflow makes use of the iso-build repository and the iso-profile repository. 
+
+Note: When cloning edit the `iso_build_mine.yaml` to point to your iso-profile repository thereby ensuring your customizations will reflect in your iso build.
