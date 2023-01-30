@@ -11,9 +11,12 @@ The base build is kept as is with only additional software added.
 All the additional softwre are listed below.
 
 ## My Additional Applications
-### kooha               #screen recorder
-### yt-dlp              #video downloader (cli)
+kooha               #screen recorder
+
+yt-dlp              #video downloader (cli)
+
 youtube-dl          #video downloader (cli)
+
 scrcpy              #android screen mirror software (cli)
 aria2               #download manager (cli)
 axel                #download accelerator (cli)
