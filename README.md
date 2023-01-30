@@ -2,17 +2,17 @@
 
 ## Motivations
 
-This is for a Manjaro iso that is ready to go where an internet connection is not reliable.
+This is a custom Manjaro iso that is pre-packaged with additional software. 
 
-It comes packed with additional applications pre-installed.
+It comes packed with additional applications pre-installed and is meant to be a fully featured and usable where an internet connection is not reliable.
 
 ## Additions to original Manjaro
 The base build is kept as is with only additional software added.
 All the additional softwre are listed below.
 
 ## My Additional Applications
-kooha               #screen recorder
-yt-dlp              #video downloader (cli)
+### kooha               #screen recorder
+### yt-dlp              #video downloader (cli)
 youtube-dl          #video downloader (cli)
 scrcpy              #android screen mirror software (cli)
 aria2               #download manager (cli)
