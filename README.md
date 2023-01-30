@@ -9,8 +9,10 @@ It comes packed with additional applications pre-installed and is meant to be fu
 
 ## Additions to original Manjaro gnome
 
-The base build of Manjaro (gnome) is kept as is with only additional software added from the manjaro repository.
-Software can be added or deleted by editing the `Packages-Desktop` file in ***iso-profiles/manjaro/gnome/Packages-Desktop*** 
+The base build of Manjaro (gnome) is kept as is with only additional software added from the manjaro repository.  
+
+Software can be added or deleted by editing the `Packages-Desktop` file in [iso-profiles/manjaro/gnome/Packages-Desktop]([https://duckduckgo.com](https://github.com/cfdlad/iso-profiles/blob/master/manjaro/gnome/Packages-Desktop))  
+
 All the additional softwre are listed below.
 
 ## My Additional Applications
