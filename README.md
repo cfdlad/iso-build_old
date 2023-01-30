@@ -1,7 +1,7 @@
 # My Manjaro iso-build
 
 This is a custom Manjaro iso that is pre-packaged with additional software.
-It is set to build *Manjaro gnome*, but and be changed to kde or xfce by changing the `Edition:[]` option in the `iso_build_mine.yaml` file
+It is set to build **Manjaro gnome**, but can be changed to kde or xfce by changing the `Edition:[]` option in the `iso_build_mine.yaml` file.
 
 ## Motivations
  
@@ -14,7 +14,7 @@ All the additional softwre are listed below.
 
 ## My Additional Applications
 
-```
+```yaml
 kooha                #screen recorder
 yt-dlp               #video downloader (cli)
 youtube-dl           #video downloader (cli)
@@ -59,6 +59,7 @@ iftop                 #network monitor (cli)
 nethogs               #network monitor (cli)
 
 ```
+
 ## Build
 
 To build use `iso_build_mine.yaml` file in the iso-build repo to run the github action.  
