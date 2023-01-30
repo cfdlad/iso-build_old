@@ -69,4 +69,4 @@ To build use [iso_build_mine.yaml](https://github.com/cfdlad/iso-build/blob/main
 
 This workflow makes use of the [iso-build](https://github.com/cfdlad/iso-build) ropository and the [iso-profiles](https://github.com/cfdlad/iso-profiles) repository. 
 
-Note: When cloning, edit the `iso_build_mine.yaml` file to point to your iso-profiles repository thereby ensuring your customizations will reflect in your iso build.  
+Note: When cloning, edit the `iso_build_mine.yaml` file so that it will point to your iso-profiles repository thereby ensuring your customizations will reflect in your iso build.  
