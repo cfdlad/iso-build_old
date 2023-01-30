@@ -65,8 +65,8 @@ nethogs               #network monitor (cli)
 
 ## Build
 
-To build use `iso_build_mine.yaml` file in the iso-build repo to run the github action. 
+To build use [iso_build_mine.yaml](https://github.com/cfdlad/iso-build/blob/main/.github/workflows/iso_build_mine.yaml) file in the iso-build repo to run the github action. 
 
-This workflow makes use of the iso-build repository and the iso-profile repository. 
+This workflow makes use of the [iso-build](https://github.com/cfdlad/iso-build) ropository and the [iso-profiles](https://github.com/cfdlad/iso-profiles) repository. 
 
-Note: When cloning edit the `iso_build_mine.yaml` to point to your iso-profile repository thereby ensuring your customizations will reflect in your iso build.
+Note: When cloning, edit the `iso_build_mine.yaml` file to point to your iso-profiles repository thereby ensuring your customizations will reflect in your iso build.  
