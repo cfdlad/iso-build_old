@@ -1,8 +1,9 @@
-name: iso_build
+name: iso_build_mine_aug_2023
 on:
   workflow_dispatch:
-  schedule:
-    - cron:  '30 2 * * *'
+  #Removed the automated build schedule
+  #schedule:
+   # - cron:  '30 2 * * *'
 
 jobs:
   prepare-release:
@@ -24,9 +25,9 @@ jobs:
     needs: [prepare-release]
     strategy:
       matrix:
-        EDITION: [gnome-next]
-        BRANCH: [unstable]
-        SCOPE: [full, minimal]
+        EDITION: [gnome] #options include gnome, kde and xfce
+        BRANCH: [stable]
+        SCOPE: [full]
     steps:
       - 
         uses: styfle/cancel-workflow-action@0.9.0
@@ -44,9 +45,13 @@ jobs:
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
+
+          #Added this code below to let the build process point to my iso-profiles repo and not the official manjaro one
+          iso-profiles-repo: "https://github.com/cfdlad/iso-profiles-aug-2023"  
+          
           version: ${{ steps.time.outputs.time }}-development
           kernel: linux64
-          code-name: "Nightly-Build"
+          code-name: "Baba_Live"
           release-tag: ${{ needs.prepare-release.outputs.release_tag }}
       -
         name: rollback
