@@ -25,7 +25,7 @@ jobs:
     needs: [prepare-release]
     strategy:
       matrix:
-        EDITION: [gnome] #options include gnome, kde and xfce
+        EDITION: [kde] #options include gnome, kde and xfce
         BRANCH: [stable]
         SCOPE: [full]
     steps:
